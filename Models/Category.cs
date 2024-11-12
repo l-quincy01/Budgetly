@@ -13,10 +13,10 @@ namespace Expense_Tracker.Models
         public string Title { get; set; }
 
         [Column(TypeName = "nvarchar(5)")]
-        public int Icon { get; set; }
+        public string Icon { get; set; } = "";
 
         [Column(TypeName = "nvarchar(10)")]
-        public int Type { get; set; }
+        public string Type { get; set; } = "Expense";
 
     }
 }
